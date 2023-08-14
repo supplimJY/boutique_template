@@ -1,18 +1,23 @@
 // Button Hover Effect
 
-const btn0bj = {
+const btnObj = {
   // DOM 컨트롤 클래스 요소 객체 정의
   commonBtn: '.common-btn', //버튼요소
   wArrow: '.White', //흰색 화살표
   bArrow: '.Black', //검은색 화살표
 };
 
+const swiperObj = {
+  commonBtn: '.swiper-button div', //버튼요소
+  wArrow: '.arrow-white', //흰색 화살표
+  bArrow: '.arrow-black', //검은색 화살표
+};
 //호버 시 화살표 색 전환
 function btnHoverEffect(obj) {
   const hoverBtn = document.querySelectorAll(obj.commonBtn);
   hoverBtn.forEach((btn) => {
-    const wArrow = document.querySelector(obj.wArrow);
-    const bArrow = document.querySelector(obj.bArrow);
+    const wArrow = btn.querySelector(obj.wArrow);
+    const bArrow = btn.querySelector(obj.bArrow);
 
     btn.addEventListener('mouseenter', function () {
       wArrow.style.display = 'block';
@@ -26,7 +31,8 @@ function btnHoverEffect(obj) {
   });
 }
 
-btnHoverEffect(btn0bj); //함수 호출
+btnHoverEffect(swiperObj); //함수 호출
+btnHoverEffect(btnObj); //함수 호출
 
 // Swiper Plugin Code //
 

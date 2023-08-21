@@ -43,6 +43,7 @@ nav .page-interval{
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 
 nav .navi{
@@ -82,7 +83,13 @@ nav .cart em{
   right: -5px;
 }
 
-/* Hero Section */
+nav .menu-icon{
+  display: none;
+}
+
+
+
+/* Hero Section */ 
 
 .hero .page-interval{
   display: flex;
@@ -591,4 +598,72 @@ footer .footer-upper .footer-left h3{
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 150%;
+}
+
+footer form{
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+}
+
+footer input{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: .75rem 0;
+  width: 80%;
+  color: #fff;
+}
+
+footer button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+footer input::placeholder{
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+}
+
+footer .footer-left em{
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 1rem;
+  display: block;
+}
+
+footer  .footer-right{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer  .footer-right ul li{
+  padding-bottom: 1.56rem;
+}
+
+footer  .footer-right ul li a{
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+
+footer .footer-lower{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+footer .footer-lower p{
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+
 }
